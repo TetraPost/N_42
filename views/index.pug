@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Find rows:
+   span.asteriskField.textInfo *
+
+  .container-fluid
+  .row
+    .col-md-6
+        .col-xs-12
+          select#propertyType.select.disabled.form-control.input-lg.propertyType(form='addProperty', name='propertyType')
+    .col-md-6
+      button.buttonTwo.btn.btn-info #{textBtn}
